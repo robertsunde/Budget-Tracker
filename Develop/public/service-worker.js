@@ -34,13 +34,17 @@ caches.open(dbcacheName).then(cache => {
 return fetch(event.request).then((response) => {
     return cache.put(event.request, response.clone()).then(() => {
       return response;
+    }).cache(err => {
+return cache.match(err)
+
     });
-  });
+  }).catch(err => 
+console.log(err));
 
 })
 
 )
-
+return 
 }
 
 
