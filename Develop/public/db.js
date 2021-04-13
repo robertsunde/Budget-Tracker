@@ -9,6 +9,7 @@ request.onupgradeneeded = function(event) {
 
   request.onsuccess = function(event) {
     db = event.target.result;
+    console.log(db)
   
 
     if (navigator.onLine) {
