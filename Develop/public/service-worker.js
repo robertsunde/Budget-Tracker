@@ -24,3 +24,27 @@ self.addEventListener('installation', (event) => {
         .then(self.skipWaiting())
     );
   });
+
+
+
+  self.addEventListener('fetch', (event) => {
+if(event.request.url.includes("/api/")) {
+event.respondWith(
+caches.open(dbcacheName).then(cache => {
+return fetch(event.request).then((response) => {
+    return cache.put(event.request, response.clone()).then(() => {
+      return response;
+    });
+  });
+
+})
+
+)
+
+}
+
+
+
+
+  })
+
