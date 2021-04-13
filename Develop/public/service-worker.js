@@ -46,7 +46,31 @@ console.log(err));
 )
 return 
 }
+event.respondWith(
+fetch(event.request).catch(() => {
 
+return caches.match(event.request).then(response => {
+
+if (response){
+    return response
+}else if (event.request.headers.get("accept").then("text/html"))
+
+
+{
+    return cache.match("/")
+}
+
+
+
+
+})
+
+
+
+})
+
+
+)
 
 
 
