@@ -21,7 +21,9 @@ This product does not require installation, and can be accessed over the web wit
 <br/>
 <br/>
 ## Usage <br/>
-To start, visit the link listed above. The page shown below will be displayed. Here, enter the name of the transaction along with the transaction amount. Next click "Add Funds" OR "Subtract Funds". Doing so will alter the graph and update the database immediately if the user is online. If the user is offline, the database will update upon reconnection to the internet but the graph will still update instantly.  <br/>
+To start, visit the link listed above. The page shown below will be displayed. 
+![Budget Tracker Homepage](https://user-images.githubusercontent.com/73792987/114648261-85ead600-9cac-11eb-94a4-3e65b496137d.png)
+Here, enter the name of the transaction along with the transaction amount. Next click "Add Funds" OR "Subtract Funds". Doing so will alter the graph and update the database immediately if the user is online. If the user is offline, the database will update upon reconnection to the internet but the graph will still update instantly.  <br/>
 <br/>
 <br/>
 ## License <br/>
