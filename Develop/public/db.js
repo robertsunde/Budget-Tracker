@@ -18,7 +18,7 @@ request.onupgradeneeded = function(event) {
     };
 
     request.onerror = function(event) {
-        console.log("Woops! " + event.target.errorCode);
+        console.log(event.target.errorCode);
       };
       
 
@@ -56,5 +56,4 @@ function checkDatabase() {
       }
     };
   }
-
   window.addEventListener("online", checkDatabase);
