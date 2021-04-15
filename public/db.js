@@ -33,6 +33,12 @@ request.onupgradeneeded = function(event) {
 // Functions for database functionality
 //////////////////////////////////////////////
 
+
+
+///////////////////////////////////////////////
+// SAVERECORD
+//////////////////////////////////////////////
+
       function saveRecord(record) {
  const transaction = db.transaction(["pending"], "readwrite");
 
@@ -40,6 +46,12 @@ request.onupgradeneeded = function(event) {
 
  store.add(record);
 }
+
+
+
+///////////////////////////////////////////////
+// CHECKDATABASE
+//////////////////////////////////////////////
 
 function checkDatabase() {
     const transaction = db.transaction(["pending"], "readwrite");
