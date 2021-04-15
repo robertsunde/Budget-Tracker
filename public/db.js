@@ -1,5 +1,10 @@
 let db;
 
+//////////////////////////////////////////////
+// Calling the budget database
+//////////////////////////////////////////////
+
+
 const request = indexedDB.open("budget", 1);
 
 request.onupgradeneeded = function(event) {
@@ -11,6 +16,9 @@ request.onupgradeneeded = function(event) {
     db = event.target.result;
     console.log(db)
   
+//////////////////////////////////////////////
+// Makining sure the application is online
+//////////////////////////////////////////////
 
     if (navigator.onLine) {
         checkDatabase();
@@ -21,6 +29,9 @@ request.onupgradeneeded = function(event) {
         console.log(event.target.errorCode);
       };
       
+///////////////////////////////////////////////
+// Functions for database functionality
+//////////////////////////////////////////////
 
       function saveRecord(record) {
  const transaction = db.transaction(["pending"], "readwrite");
@@ -56,4 +67,10 @@ function checkDatabase() {
       }
     };
   }
+
+
+  ///////////////////////////////////////////////////////////
+  // Checking for application to regain internet access.
+  ///////////////////////////////////////////////////////////
+
   window.addEventListener("online", checkDatabase);
