@@ -17,7 +17,7 @@ The "Budget Tracker" is an application used to track transactions both online an
 <br/>
 <br/>
 ## Installation <br/>
-This product does not require installation, and can be accessed over the web with the following link: <br/>
+This product does not require installation, and can be accessed over the web with the following link: https://robs-budget-tracker.herokuapp.com/<br/>
 <br/>
 <br/>
 ## Usage <br/>
